@@ -79,7 +79,7 @@ congreso-intro/
 │  ├─ audio/voice/              narración por bloques + manifiesto con marcas de tiempo por palabra
 │  ├─ audio/mix.wav             mezcla final masterizada
 │  ├─ audio/stems/              pistas separadas: voz, música, efectos
-│  └─ fonts/                    Bebas Neue, Montserrat, Oswald (OFL)
+│  └─ fonts/                    Bebas Neue y Montserrat (OFL)
 ├─ scripts/                     generación y control de calidad (Python / Node / Bash)
 ├─ docs/                        guion, inventario, validación, referencia
 └─ output/                      videos renderizados

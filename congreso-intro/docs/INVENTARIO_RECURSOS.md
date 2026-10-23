@@ -6,21 +6,10 @@ Todos los recursos visuales y sonoros de la intro se generaron por código para 
 |---|---|---|---|---|---|
 | images/plates/acantilado/capa0.webp | 2D, 3F | Generado por código para este proyecto (scripts/generate_plates.py) — render 3D por raymarching | Obra original del proyecto (libre uso para el evento) | 3200×1800 con alfa | — |
 | images/plates/acantilado/capa1.jpg | 2D, 3F | Generado por código para este proyecto (scripts/generate_plates.py) — render 3D por raymarching | Obra original del proyecto (libre uso para el evento) | 3200×1800 | — |
-| images/plates/acantilado/capa1.webp | 2D, 3F | Generado por código para este proyecto (scripts/generate_plates.py) — render 3D por raymarching | Obra original del proyecto (libre uso para el evento) | 1600×900 con alfa | — |
-| images/plates/acantilado/capa2.jpg | 2D, 3F | Generado por código para este proyecto (scripts/generate_plates.py) — render 3D por raymarching | Obra original del proyecto (libre uso para el evento) | 1600×900 | — |
-| images/plates/acantilado/cliff.webp | 2D, 3F | Generado por código para este proyecto (scripts/generate_plates.py) — render 3D por raymarching | Obra original del proyecto (libre uso para el evento) | 1600×900 con alfa | — |
-| images/plates/acantilado/fog.webp | 2D, 3F | Generado por código para este proyecto (scripts/generate_plates.py) — render 3D por raymarching | Obra original del proyecto (libre uso para el evento) | 1600×900 con alfa | — |
-| images/plates/acantilado/mtn_far.webp | 2D, 3F | Generado por código para este proyecto (scripts/generate_plates.py) — render 3D por raymarching | Obra original del proyecto (libre uso para el evento) | 1600×900 con alfa | — |
-| images/plates/acantilado/mtn_mid.webp | 2D, 3F | Generado por código para este proyecto (scripts/generate_plates.py) — render 3D por raymarching | Obra original del proyecto (libre uso para el evento) | 1600×900 con alfa | — |
-| images/plates/acantilado/mtn_near.webp | 2D, 3F | Generado por código para este proyecto (scripts/generate_plates.py) — render 3D por raymarching | Obra original del proyecto (libre uso para el evento) | 1600×900 con alfa | — |
 | images/plates/acantilado/rayos.webp | 2D, 3F | Generado por código para este proyecto (scripts/generate_plates.py) — render 3D por raymarching | Obra original del proyecto (libre uso para el evento) | 3200×1800 con alfa | — |
-| images/plates/acantilado/rays.webp | 2D, 3F | Generado por código para este proyecto (scripts/generate_plates.py) — render 3D por raymarching | Obra original del proyecto (libre uso para el evento) | 1600×900 con alfa | — |
 | images/plates/acantilado/roca.webp | 2D, 3F | Generado por código para este proyecto (scripts/generate_plates.py) — render 3D por raymarching | Obra original del proyecto (libre uso para el evento) | 3200×1800 con alfa | — |
-| images/plates/acantilado/sky.jpg | 2D, 3F | Generado por código para este proyecto (scripts/generate_plates.py) — render 3D por raymarching | Obra original del proyecto (libre uso para el evento) | 1600×900 | — |
 | images/plates/acantilado_luz/capa0.webp | 5I | Generado por código para este proyecto (scripts/generate_plates.py) — render 3D por raymarching | Obra original del proyecto (libre uso para el evento) | 3200×1800 con alfa | — |
 | images/plates/acantilado_luz/capa1.jpg | 5I | Generado por código para este proyecto (scripts/generate_plates.py) — render 3D por raymarching | Obra original del proyecto (libre uso para el evento) | 3200×1800 | — |
-| images/plates/acantilado_luz/capa1.webp | 5I | Generado por código para este proyecto (scripts/generate_plates.py) — render 3D por raymarching | Obra original del proyecto (libre uso para el evento) | 1600×900 con alfa | — |
-| images/plates/acantilado_luz/capa2.jpg | 5I | Generado por código para este proyecto (scripts/generate_plates.py) — render 3D por raymarching | Obra original del proyecto (libre uso para el evento) | 1600×900 | — |
 | images/plates/acantilado_luz/rayos.webp | 5I | Generado por código para este proyecto (scripts/generate_plates.py) — render 3D por raymarching | Obra original del proyecto (libre uso para el evento) | 3200×1800 con alfa | — |
 | images/plates/acantilado_luz/roca.webp | 5I | Generado por código para este proyecto (scripts/generate_plates.py) — render 3D por raymarching | Obra original del proyecto (libre uso para el evento) | 3200×1800 con alfa | — |
 | images/plates/amanecer/capa0.webp | 4C, 5F, 5K, 5L | Generado por código para este proyecto (scripts/generate_plates.py) — render 3D por raymarching | Obra original del proyecto (libre uso para el evento) | 3200×1800 con alfa | — |
@@ -86,7 +75,6 @@ Todos los recursos visuales y sonoros de la intro se generaron por código para 
 | fonts/BebasNeue-Regular.ttf | textos | Google Fonts (repositorio google/fonts) | SIL Open Font License 1.1 (archivo OFL incluido) | — | — |
 | fonts/Montserrat-Italic-Variable.ttf | textos | Google Fonts (repositorio google/fonts) | SIL Open Font License 1.1 (archivo OFL incluido) | — | — |
 | fonts/Montserrat-Variable.ttf | textos | Google Fonts (repositorio google/fonts) | SIL Open Font License 1.1 (archivo OFL incluido) | — | — |
-| fonts/Oswald-Variable.ttf | textos | Google Fonts (repositorio google/fonts) | SIL Open Font License 1.1 (archivo OFL incluido) | — | — |
 
 ## Recursos externos usados durante la producción (no incluidos en `public/`)
 
@@ -97,5 +85,5 @@ Todos los recursos visuales y sonoros de la intro se generaron por código para 
 | Whisper small (OpenAI) vía sherpa-onnx | Verificación automática de la dicción (no aparece en el video) | MIT |
 | Parakeet TDT 0.6B v3 (NVIDIA) vía sherpa-onnx | Marcas de tiempo por palabra para sincronizar textos (no aparece en el video) | CC-BY-4.0 |
 | Remotion 4.0.538 | Composición y render del video | Remotion License: gratuita para personas, organizaciones sin fines de lucro y empresas de hasta 3 empleados; las demás necesitan licencia de empresa (remotion.pro) |
-| Bebas Neue, Montserrat, Oswald | Tipografías | SIL OFL 1.1 |
+| Bebas Neue, Montserrat | Tipografías | SIL OFL 1.1 |
 

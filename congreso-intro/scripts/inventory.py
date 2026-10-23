@@ -103,7 +103,7 @@ def main():
     out.append("| Whisper small (OpenAI) vía sherpa-onnx | Verificación automática de la dicción (no aparece en el video) | MIT |")
     out.append("| Parakeet TDT 0.6B v3 (NVIDIA) vía sherpa-onnx | Marcas de tiempo por palabra para sincronizar textos (no aparece en el video) | CC-BY-4.0 |")
     out.append("| Remotion 4.0.538 | Composición y render del video | Remotion License: gratuita para personas, organizaciones sin fines de lucro y empresas de hasta 3 empleados; las demás necesitan licencia de empresa (remotion.pro) |")
-    out.append("| Bebas Neue, Montserrat, Oswald | Tipografías | SIL OFL 1.1 |")
+    out.append("| Bebas Neue, Montserrat | Tipografías | SIL OFL 1.1 |")
     out.append("")
     path = os.path.join(ROOT, "docs", "INVENTARIO_RECURSOS.md")
     open(path, "w", encoding="utf-8").write("\n".join(out) + "\n")
