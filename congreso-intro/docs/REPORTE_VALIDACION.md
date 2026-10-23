@@ -23,6 +23,29 @@
 
 Tramos oscuros detectados (intencionales: fundido de entrada y silencio previo al título): 0.00–0.90 s, 75.13–75.80 s
 
+## intro_congreso_4k.mp4 — APROBADO
+
+- Video: h264 · 3840×2160 · 30.000 fps · yuv420p · 32.2 Mb/s
+- Audio: aac · 48000 Hz · 2 canales
+- Sonoridad integrada: -14.0 LUFS · pico real: -0.9 dBTP
+
+| Comprobación | Resultado | Detalle |
+|---|---|---|
+| Contenedor MP4 | ✅ | mov,mp4,m4a,3gp,3g2,mj2 |
+| Códec de video H.264 | ✅ | h264 High yuv420p |
+| Frecuencia 30 fps | ✅ | 30.000 fps |
+| Duración ≈ 90 s | ✅ | 90.005 s |
+| Resolución 16:9 | ✅ | 3840×2160 |
+| Color BT.709 en rango limitado (estándar HD) | ✅ | yuv420p · bt709 · rango tv |
+| Audio AAC estéreo 48 kHz | ✅ | aac 48000 Hz 2 canales |
+| Audio cubre todo el video | ✅ | audio 90.005 s / video 90.005 s |
+| Sonoridad integrada (−16…−12 LUFS) | ✅ | -14.0 LUFS |
+| Sin saturación (pico real ≤ −0,5 dBTP) | ✅ | -0.9 dBTP |
+| Sin silencios accidentales | ✅ | silencios: [(75.02, 75.8)] |
+| Sin pantallas negras accidentales | ✅ | tramos negros: [(0.0, 0.9), (75.13, 75.8)] |
+
+Tramos oscuros detectados (intencionales: fundido de entrada y silencio previo al título): 0.00–0.90 s, 75.13–75.80 s
+
 ## intro_congreso_preview_540p.mp4 — APROBADO
 
 - Video: h264 · 960×540 · 30.000 fps · yuv420p · 0.8 Mb/s
@@ -107,4 +130,5 @@ Motor: supertonic · estilo M2 · 6 tomas por frase, selección automática.
 - Textos en español revisados contra la configuración (tildes y signos de apertura incluidos); el versículo respeta la Reina-Valera 1960.
 - Ninguna palabra queda fuera del cuadro visible con las franjas de cine (área útil 1920×803 px); el título se ajusta automáticamente al 84 % del ancho.
 - Sincronía: la voz, la música y los cortes comparten `config/intro.config.json`; las palabras clave usan marcas de tiempo por palabra (Parakeet) y los pasos, truenos, puerta y focos coinciden con su imagen.
+- Versión 4K: se revisaron recortes a tamaño real. Textos, siluetas, partículas y destellos se dibujan a resolución nativa y se ven nítidos; los paisajes se generaron a 3200×1800 y se escalan, así que se ven algo más suaves que el texto. Para paisajes 4K nativos se pueden regenerar los fondos a doble escala (`PLATE_SCALE=2 .venv/bin/python scripts/generate_plates.py`, unas 4 veces más cálculo; esa escala no se probó en esta entrega) antes de `bun run render:4k`.
 

@@ -61,6 +61,8 @@ bun run studio           # vista previa interactiva en el navegador (Remotion St
 
 Tiempos de referencia en una máquina de 4 núcleos sin GPU: prueba 540p ≈ 5 min, final 1080p ≈ 13 min, 4K ≈ 50 min. No fuerces el renderizador `swangle` (`REMOTION_GL`): en máquinas sin GPU multiplica el tiempo por ~5.
 
+En 4K, textos, siluetas y destellos salen nítidos porque se dibujan a resolución nativa; los paisajes se generaron a 3200×1800 y se escalan, así que se ven algo más suaves. Para paisajes 4K nativos se pueden regenerar a doble escala con `PLATE_SCALE=2 .venv/bin/python scripts/generate_plates.py` (unas 4 veces más cálculo; esa escala no se probó en esta entrega).
+
 Variables opcionales en `.env.example` (no hace falta ninguna API key).
 
 ## Cómo está hecho

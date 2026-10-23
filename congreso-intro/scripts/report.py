@@ -69,7 +69,10 @@ def main():
     out.append("- Se renderizaron y revisaron fotogramas de todos los planos (hojas de contactos) en varias iteraciones; se corrigieron: cielos sobreexpuestos, nubes planas, iluminación de bordes del terreno, disco solar en la tormenta, anatomía de siluetas, perfil y mano, palabras que se salían del cuadro, contraste de textos sobre fondos claros, inicio oscuro de la puerta y del plano de transición.")
     out.append("- Textos en español revisados contra la configuración (tildes y signos de apertura incluidos); el versículo respeta la Reina-Valera 1960.")
     out.append("- Ninguna palabra queda fuera del cuadro visible con las franjas de cine (área útil 1920×803 px); el título se ajusta automáticamente al 84 % del ancho.")
-    out.append("- Sincronía: la voz, la música y los cortes comparten `config/intro.config.json`; las palabras clave usan marcas de tiempo por palabra (Parakeet) y los pasos, truenos, puerta y focos coinciden con su imagen.\n")
+    out.append("- Sincronía: la voz, la música y los cortes comparten `config/intro.config.json`; las palabras clave usan marcas de tiempo por palabra (Parakeet) y los pasos, truenos, puerta y focos coinciden con su imagen.")
+    if any(os.path.basename(vp).endswith("_4k.json") for vp in vals):
+        out.append("- Versión 4K: se revisaron recortes a tamaño real. Textos, siluetas, partículas y destellos se dibujan a resolución nativa y se ven nítidos; los paisajes se generaron a 3200×1800 y se escalan, así que se ven algo más suaves que el texto. Para paisajes 4K nativos se pueden regenerar los fondos a doble escala (`PLATE_SCALE=2 .venv/bin/python scripts/generate_plates.py`, unas 4 veces más cálculo; esa escala no se probó en esta entrega) antes de `bun run render:4k`.")
+    out.append("")
     path = os.path.join(ROOT, "docs", "REPORTE_VALIDACION.md")
     open(path, "w", encoding="utf-8").write("\n".join(out) + "\n")
     print(path)
