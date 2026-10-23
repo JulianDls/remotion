@@ -11,7 +11,7 @@ const scale = Number(process.env.STILL_SCALE ?? '0.5');
 const serveUrl = await bundle({entryPoint: path.resolve('src/index.ts'), onProgress: () => {}});
 const browser = await openBrowser('chrome', {
 	browserExecutable: process.env.REMOTION_BROWSER_EXECUTABLE ?? null,
-	chromiumOptions: {gl: 'swangle'},
+	chromiumOptions: process.env.REMOTION_GL ? {gl: process.env.REMOTION_GL} : {},
 });
 const composition = await selectComposition({serveUrl, id: 'Intro', puppeteerInstance: browser});
 for (const s of secs) {

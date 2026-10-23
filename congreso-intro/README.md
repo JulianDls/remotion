@@ -2,7 +2,7 @@
 
 Intro de 90 segundos para abrir un congreso cristiano de jóvenes: narración en español latinoamericano, banda sonora original, diseño sonoro e imagen cinematográfica, todo generado por código y sincronizado en una sola línea de tiempo.
 
-- **Video final:** `output/intro_congreso.mp4` (1920×1080, 30 fps, H.264, AAC estéreo 48 kHz)
+- **Video final:** `output/intro_congreso.mp4` (1920×1080, 30 fps, H.264 BT.709 rango limitado, AAC estéreo 48 kHz, −14 LUFS)
 - **Versión de prueba:** `output/intro_congreso_preview_540p.mp4` (960×540)
 - **Versión 4K (opcional):** `output/intro_congreso_4k.mp4` (3840×2160, se genera con `bun run render:4k`)
 - **Guion definitivo:** [`docs/GUION.md`](docs/GUION.md)
@@ -20,9 +20,9 @@ Todo se controla desde **`config/intro.config.json`**:
 |---|---|
 | Nombre del congreso, subtítulo, lema | `evento.nombre`, `evento.subtitulo`, `evento.lema` |
 | Versículo (texto, referencia, traducción) | `evento.versiculo` |
-| Paleta de colores | `paleta` |
+| Paleta de colores | `paleta` (fondos de escena, textos, destellos y halos; los paisajes generados la usan al regenerarlos con `scripts/generate_plates.py`) |
 | Intensidad de efectos, partículas, niebla, grano, destellos | `estilo` |
-| Velocidad de cámara y del montaje rápido final | `estilo.velocidadCamara`, `estilo.velocidadEdicion` |
+| Velocidad de cámara y cortes del montaje final | `estilo.velocidadCamara` (amplitud de los movimientos), `estilo.velocidadEdicion` (1 = 4 cortes en el montaje de 73–75 s; 2 = 8 cortes) |
 | Volumen de voz, música y efectos | `audio` |
 | Franjas de cine, final sostenido o fundido a negro | `video.franjasCine`, `video.finalSostenido` |
 | Resolución | `video.ancho`/`video.alto` (o `bun run render:4k` para 4K) |
@@ -57,7 +57,9 @@ bun run render:4k        # 4K           -> output/intro_congreso_4k.mp4
 bun run studio           # vista previa interactiva en el navegador (Remotion Studio)
 ```
 
-`scripts/render.sh` primero rehace la mezcla de audio con los volúmenes de la configuración (si existe el entorno Python), luego renderiza con Remotion y deja el MP4 listo para reproducirse en cualquier equipo.
+`scripts/render.sh` primero rehace la mezcla de audio con los volúmenes de la configuración (si existe el entorno Python), luego renderiza con Remotion (H.264, color BT.709 en rango limitado, el estándar HD que esperan proyectores y procesadores LED) y deja el MP4 listo para reproducirse en cualquier equipo.
+
+Tiempos de referencia en una máquina de 4 núcleos sin GPU: prueba 540p ≈ 5 min, final 1080p ≈ 13 min, 4K ≈ 50 min. No fuerces el renderizador `swangle` (`REMOTION_GL`): en máquinas sin GPU multiplica el tiempo por ~5.
 
 Variables opcionales en `.env.example` (no hace falta ninguna API key).
 

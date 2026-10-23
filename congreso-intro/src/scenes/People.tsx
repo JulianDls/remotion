@@ -1,6 +1,6 @@
 import React, {useLayoutEffect, useMemo, useRef} from 'react';
 import {AbsoluteFill, Img, interpolate, Sequence, useCurrentFrame} from 'remotion';
-import {FPS, H, PAL, PLATES, W} from '../config';
+import {FPS, FX, H, PAL, PLATES, W} from '../config';
 import {Camera, Layer} from '../components/Camera';
 import {Fog, Glow, Streak} from '../components/Effects';
 import {Figures, FigureSpec} from '../components/Figures';
@@ -539,25 +539,32 @@ export const PalabraFondo: React.FC<SceneProps> = ({dur}) => {
 // ------------------------------------------------------------------ 5L: montaje final con destellos
 export const Montaje: React.FC<SceneProps> = ({plano, dur}) => {
 	const frame = useCurrentFrame();
-	const cut = Math.round(dur / 4);
+	const n = montageCuts();
+	const cut = Math.round(dur / n);
 	const p = clamp(frame / Math.max(1, dur - 1));
 	const white = easeIn(clamp((p - 0.86) / 0.14));
-	const sub = (id: string, inicio: number) => ({...plano, id, inicio});
+	const sub = (id: string) => ({...plano, id});
+	const shots: ((d: number) => React.ReactNode)[] = [
+		(d) => <Adoracion plano={sub('5G')} dur={d} sub="5G" />,
+		(d) => <Mano plano={sub('5B')} dur={d} sub="5B" />,
+		(d) => <Adoracion plano={sub('5J')} dur={d} sub="5J" />,
+		(d) => <Mano plano={sub('5H')} dur={d} sub="5H" />,
+	];
 	return (
 		<AbsoluteFill style={{background: PAL.negro}}>
-			<Sequence durationInFrames={cut}>
-				<Adoracion plano={sub('5G', plano.inicio)} dur={cut} sub="5G" />
-			</Sequence>
-			<Sequence from={cut} durationInFrames={cut}>
-				<Mano plano={sub('5B', plano.inicio)} dur={cut} sub="5B" />
-			</Sequence>
-			<Sequence from={cut * 2} durationInFrames={cut}>
-				<Adoracion plano={sub('5J', plano.inicio)} dur={cut} sub="5J" />
-			</Sequence>
-			<Sequence from={cut * 3}>
-				<Amanecer plano={sub('5K', plano.inicio)} dur={dur - cut * 3} />
-			</Sequence>
+			{Array.from({length: n}, (_, k) => {
+				const last = k === n - 1;
+				const d = last ? dur - cut * k : cut;
+				return (
+					<Sequence key={k} from={cut * k} durationInFrames={d}>
+						{last ? <Amanecer plano={sub('5K')} dur={d} /> : shots[k % shots.length](d)}
+					</Sequence>
+				);
+			})}
 			<AbsoluteFill style={{background: '#fff', opacity: white}} />
 		</AbsoluteFill>
 	);
 };
+
+/** Número de cortes del montaje final (estilo.velocidadEdicion: 1 = 4 cortes en 2 s). */
+export const montageCuts = () => Math.max(2, Math.min(8, Math.round(4 * FX.velocidadEdicion)));

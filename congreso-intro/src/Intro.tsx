@@ -20,7 +20,7 @@ import {
 	Transicion,
 	VoidDust,
 } from './scenes/Landscapes';
-import {Adoracion, Auditorio, Mano, Montaje, Multitud, PalabraFondo, Perfil, Puerta} from './scenes/People';
+import {Adoracion, Auditorio, Mano, Montaje, montageCuts, Multitud, PalabraFondo, Perfil, Puerta} from './scenes/People';
 import {Keywords, Titulo, Verse} from './scenes/Text';
 
 const SCENES: Record<string, React.FC<SceneProps>> = {
@@ -68,6 +68,17 @@ const Shot: React.FC<{plano: Plano}> = ({plano}) => {
 	);
 };
 
+/** Destellos en cada corte del montaje final (73-75 s), sincronizados con estilo.velocidadEdicion. */
+const montageFlashes = () => {
+	const plano = CFG.planos.find((p) => p.tipo === 'montaje');
+	if (!plano) {
+		return [];
+	}
+	const n = montageCuts();
+	const len = plano.fin - plano.inicio;
+	return Array.from({length: n - 1}, (_, k) => ({at: plano.inicio + ((k + 1) * len) / n, peak: k === n - 2 ? 0.4 : 0.24, dur: 4}));
+};
+
 export const Intro: React.FC = () => {
 	const frame = useCurrentFrame();
 	const t = frame / FPS;
@@ -78,9 +89,7 @@ export const Intro: React.FC = () => {
 		...syncArr('golpesDeclaracion').map((a) => ({at: a, peak: 0.55, dur: 9})),
 		{at: syncNum('inicioGroove'), peak: 0.7, dur: 10},
 		{at: 68.0, peak: 0.4, dur: 7},
-		{at: 73.5, peak: 0.22, dur: 4},
-		{at: 74.0, peak: 0.25, dur: 4},
-		{at: 74.5, peak: 0.4, dur: 5},
+		...montageFlashes(),
 		{at: tRev, peak: 1.0, dur: 22, color: '#fff3dd'},
 		{at: syncNum('impactoFinal'), peak: 0.45, dur: 16, color: PAL.dorado},
 	];

@@ -30,7 +30,7 @@ case "$MODE" in
 esac
 mkdir -p output
 TMP="${OUT%.mp4}.tmp.mp4"
-"$RUNNER" remotion render src/index.ts Intro "$TMP" --codec=h264 --pixel-format=yuv420p --audio-codec=aac "${ARGS[@]}" "${EXTRA[@]}"
+"$RUNNER" remotion render src/index.ts Intro "$TMP" --codec=h264 --pixel-format=yuv420p --color-space=bt709 --audio-codec=aac "${ARGS[@]}" "${EXTRA[@]}"
 
 # 3) MP4 con el índice al principio (reproducción inmediata en cualquier reproductor).
 ffmpeg -y -loglevel error -i "$TMP" -c copy -movflags +faststart "$OUT"

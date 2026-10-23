@@ -46,6 +46,11 @@ def main():
     check("Frecuencia 30 fps", abs(fps - cfg["video"]["fps"]) < 0.01, f"{fps:.3f} fps")
     check("Duración ≈ 90 s", abs(dur - cfg["video"]["duracionSegundos"]) < 0.2, f"{dur:.3f} s")
     check("Resolución 16:9", abs(v["width"] / v["height"] - 16 / 9) < 0.01, f"{v['width']}×{v['height']}")
+    check(
+        "Color BT.709 en rango limitado (estándar HD)",
+        v.get("color_space") == "bt709" and v.get("color_range") == "tv" and v.get("pix_fmt") == "yuv420p",
+        f"{v.get('pix_fmt')} · {v.get('color_space')} · rango {v.get('color_range')}",
+    )
     if a:
         check("Audio AAC estéreo 48 kHz", a["codec_name"] == "aac" and int(a["sample_rate"]) == 48000 and a["channels"] == 2, f"{a['codec_name']} {a['sample_rate']} Hz {a['channels']} canales")
         adur = float(a.get("duration", dur))
