@@ -1,0 +1,155 @@
+{
+	"_ayuda": "Configuración central de la intro. Los textos, la paleta, los volúmenes y la intensidad de los efectos se cambian aquí y basta con volver a renderizar (bun run render). Si cambias la narración (sección 'narracion') hay que regenerar la voz y la mezcla: ver README.",
+
+	"evento": {
+		"nombre": "[NOMBRE DEL CONGRESO]",
+		"subtitulo": "Una generación. Una respuesta.",
+		"lema": "[VERSÍCULO O LEMA DEL CONGRESO]",
+		"versiculo": {
+			"lineas": ["Levántate, resplandece;", "porque ha venido tu luz,", "y la gloria de Jehová ha nacido sobre ti."],
+			"referencia": "Isaías 60:1",
+			"traduccion": "RVR1960"
+		}
+	},
+
+	"video": {
+		"fps": 30,
+		"ancho": 1920,
+		"alto": 1080,
+		"duracionSegundos": 90,
+		"franjasCine": true,
+		"_franjasCine": "Franjas negras tipo cine (2.39:1) durante la narración; se abren al revelar el título.",
+		"finalSostenido": true,
+		"_finalSostenido": "true = el último fotograma deja el título en pantalla (para pasar directo al escenario). false = funde a negro en el último segundo."
+	},
+
+	"paleta": {
+		"negro": "#05060A",
+		"azulNoche": "#0B1426",
+		"azulElectrico": "#4F8CFF",
+		"blanco": "#F5F7FF",
+		"dorado": "#E9B86A"
+	},
+
+	"tipografia": {
+		"impacto": "Bebas Neue",
+		"secundaria": "Montserrat"
+	},
+
+	"estilo": {
+		"_ayuda": "Multiplicadores (1 = valor diseñado; 0 = desactivado; >1 = más intenso).",
+		"intensidadEfectos": 1,
+		"particulas": 1,
+		"niebla": 1,
+		"grano": 1,
+		"destellos": 1,
+		"velocidadCamara": 1,
+		"velocidadEdicion": 1,
+		"_velocidadEdicion": "Afecta a la densidad de los cortes rápidos del montaje final (escena 5). Los cortes sincronizados con la voz y la música no se mueven."
+	},
+
+	"audio": {
+		"_ayuda": "Volúmenes de las pistas (1 = mezcla diseñada). Se aplican al renderizar, sin regenerar el audio.",
+		"volumenVoz": 1,
+		"volumenMusica": 1,
+		"volumenEfectos": 1
+	},
+
+	"voz": {
+		"_ayuda": "Parámetros de síntesis de la narración (scripts/generate_voice.py). Supertonic 3 local, estilo M2 = voz masculina grave y serena.",
+		"motor": "supertonic",
+		"estilo": "M2",
+		"velocidad": 0.88,
+		"pasos": 32,
+		"seseo": true,
+		"_seseo": "Reescribe c/z como 's' solo en el texto que se envía al sintetizador para asegurar pronunciación latinoamericana (luz → lus). No afecta a los textos en pantalla."
+	},
+
+	"narracion": [
+		{"id": "vo01", "escena": 1, "inicio": 2.4, "registro": "intimo", "texto": "Hay momentos… en los que el ruido del mundo intenta apagar lo que Dios encendió en nosotros."},
+		{"id": "vo02", "escena": 2, "inicio": 11.0, "registro": "intimo", "texto": "Generaciones enteras han buscado respuestas."},
+		{"id": "vo03", "escena": 2, "inicio": 14.8, "registro": "intimo", "texto": "Han perseguido sueños, identidad y propósito."},
+		{"id": "vo04", "escena": 2, "inicio": 21.2, "registro": "firme", "texto": "Pero hay una voz que sigue llamando."},
+		{"id": "vo05", "escena": 3, "inicio": 25.6, "registro": "firme", "texto": "No fuimos creados para vivir dormidos."},
+		{"id": "vo06", "escena": 3, "inicio": 29.3, "registro": "firme", "texto": "Fuimos llamados a conocerle, a seguirle, y a vivir para algo mucho más grande que nosotros mismos."},
+		{"id": "vo07", "escena": 4, "inicio": 51.0, "registro": "firme", "texto": "No se trata solamente de reunirnos."},
+		{"id": "vo08", "escena": 4, "inicio": 54.0, "registro": "firme", "texto": "Se trata de responder a Su llamado."},
+		{"id": "vo09", "escena": 5, "inicio": 57.25, "registro": "climax", "texto": "Una generación."},
+		{"id": "vo10", "escena": 5, "inicio": 59.25, "registro": "climax", "texto": "Una fe."},
+		{"id": "vo11", "escena": 5, "inicio": 61.25, "registro": "climax", "texto": "Una respuesta."},
+		{"id": "vo12", "escena": 5, "inicio": 64.0, "registro": "climax", "texto": "¿Y si este fuera el momento de dejar de mirar desde lejos…"},
+		{"id": "vo13", "escena": 5, "inicio": 69.2, "registro": "climax", "texto": "…y comenzar a vivir aquello para lo que fuimos llamados?"}
+	],
+
+	"palabrasClave": [
+		{"palabra": "IDENTIDAD", "vozId": "vo03", "enPalabra": "identidad", "hasta": 18.4},
+		{"palabra": "PROPÓSITO", "vozId": "vo03", "enPalabra": "propósito", "hasta": 18.4},
+		{"palabra": "LLAMADOS", "vozId": "vo06", "enPalabra": "llamados", "duracion": 1.6},
+		{"palabra": "DESPIERTA", "inicio": 63.0, "duracion": 1.0},
+		{"palabra": "RESPONDE", "inicio": 73.3, "duracion": 1.4}
+	],
+
+	"escenas": [
+		{"n": 1, "nombre": "El silencio", "inicio": 0, "fin": 10.5},
+		{"n": 2, "nombre": "La búsqueda", "inicio": 10.5, "fin": 25},
+		{"n": 3, "nombre": "El llamado", "inicio": 25, "fin": 43},
+		{"n": 4, "nombre": "La Palabra y la promesa", "inicio": 43, "fin": 57},
+		{"n": 5, "nombre": "El despertar", "inicio": 57, "fin": 75},
+		{"n": 6, "nombre": "La revelación", "inicio": 75, "fin": 85},
+		{"n": 7, "nombre": "El impacto final", "inicio": 85, "fin": 90}
+	],
+
+	"sincronia": {
+		"_ayuda": "Puntos de sincronización compartidos por la imagen y el audio (segundos).",
+		"tempo": 120,
+		"_tempo": "120 BPM: cada compás dura 2 s y empieza en segundo impar (1, 3, 5...).",
+		"inicioPulso": 11.0,
+		"elevacionVoz": 21.0,
+		"inicioOstinato": 25.0,
+		"transicionPalabra": 43.0,
+		"versiculoLineas": [43.6, 45.2, 46.8],
+		"versiculoReferencia": 48.4,
+		"versiculoSalida": 50.2,
+		"golpesDeclaracion": [57.0, 59.0, 61.0],
+		"inicioGroove": 63.0,
+		"corteSilencio": 75.0,
+		"revelacionTitulo": 75.8,
+		"subtitulo": 78.2,
+		"impactoFinal": 85.0
+	},
+
+	"planos": [
+		{"id": "1A", "tipo": "vacio", "inicio": 0.0, "fin": 5.0, "descripcion": "Polvo suspendido en un haz de luz fría"},
+		{"id": "1B", "tipo": "horizonte", "inicio": 5.0, "fin": 10.5, "descripcion": "Horizonte lejano que se revela en la oscuridad"},
+		{"id": "2A", "tipo": "ciudad", "inicio": 10.5, "fin": 13.5, "descripcion": "Ciudad de noche, perspectiva monumental"},
+		{"id": "2B", "tipo": "calle", "inicio": 13.5, "fin": 18.5, "descripcion": "Joven caminando solo por una calle oscura"},
+		{"id": "2C", "tipo": "azotea", "inicio": 18.5, "fin": 21.0, "descripcion": "Siluetas mirando una luz lejana sobre la ciudad"},
+		{"id": "2D", "tipo": "acantilado", "inicio": 21.0, "fin": 25.0, "descripcion": "Figura de espaldas ante un paisaje inmenso; la luz rompe las nubes"},
+		{"id": "3A", "tipo": "tormenta", "inicio": 25.0, "fin": 29.0, "descripcion": "Nubes de tormenta en movimiento sobre montañas"},
+		{"id": "3B", "tipo": "perfil", "inicio": 29.0, "fin": 31.0, "descripcion": "Perfil de un joven levantando la mirada hacia la luz"},
+		{"id": "3C", "tipo": "cumbre", "inicio": 31.0, "fin": 33.0, "descripcion": "Cumbre iluminada por la primera luz"},
+		{"id": "3D", "tipo": "caminantes", "inicio": 33.0, "fin": 35.0, "descripcion": "Grupo de jóvenes caminando juntos por la cresta"},
+		{"id": "3E", "tipo": "rayos", "inicio": 35.0, "fin": 37.0, "descripcion": "Rayos de luz atravesando las nubes"},
+		{"id": "3F", "tipo": "acantilado", "inicio": 37.0, "fin": 38.0, "descripcion": "Figura de espaldas, la luz crece (corte rápido)"},
+		{"id": "3G", "tipo": "nubes", "inicio": 38.0, "fin": 39.0, "descripcion": "Travesía entre nubes (corte rápido)"},
+		{"id": "3H", "tipo": "cumbre", "inicio": 39.0, "fin": 40.0, "descripcion": "Cumbre, destello (corte rápido)"},
+		{"id": "3I", "tipo": "perfil", "inicio": 40.0, "fin": 41.0, "descripcion": "Perfil a contraluz (corte rápido)"},
+		{"id": "3J", "tipo": "transicion", "inicio": 41.0, "fin": 43.0, "descripcion": "Oscuridad y haz de luz que crece hasta el destello"},
+		{"id": "4A", "tipo": "cielo", "inicio": 43.0, "fin": 50.6, "descripcion": "Cielo inmenso con rayos dorados; versículo en pantalla"},
+		{"id": "4B", "tipo": "puerta", "inicio": 50.6, "fin": 53.8, "descripcion": "Puerta monumental que se abre y deja entrar la luz"},
+		{"id": "4C", "tipo": "multitud", "inicio": 53.8, "fin": 57.0, "descripcion": "Jóvenes reunidos frente a la luz"},
+		{"id": "5A", "tipo": "adoracion", "inicio": 57.0, "fin": 59.0, "descripcion": "Multitud con manos levantadas, haces de luz"},
+		{"id": "5B", "tipo": "mano", "inicio": 59.0, "fin": 61.0, "descripcion": "Una mano levantada contra la luz"},
+		{"id": "5C", "tipo": "auditorio", "inicio": 61.0, "fin": 63.0, "descripcion": "Auditorio en penumbra: las luces se encienden"},
+		{"id": "5D", "tipo": "palabra", "inicio": 63.0, "fin": 64.0, "descripcion": "DESPIERTA"},
+		{"id": "5E", "tipo": "caminantes", "inicio": 64.0, "fin": 66.0, "descripcion": "Jóvenes caminando juntos hacia la cámara, contraluz"},
+		{"id": "5F", "tipo": "amanecer", "inicio": 66.0, "fin": 67.0, "descripcion": "El horizonte se ilumina"},
+		{"id": "5G", "tipo": "adoracion", "inicio": 67.0, "fin": 68.0, "descripcion": "Haces de luz barren la multitud"},
+		{"id": "5H", "tipo": "mano", "inicio": 68.0, "fin": 69.2, "descripcion": "Mano y luz (pausa dramática)"},
+		{"id": "5I", "tipo": "acantilado", "inicio": 69.2, "fin": 71.0, "descripcion": "Figura que avanza hacia un horizonte resplandeciente"},
+		{"id": "5J", "tipo": "adoracion", "inicio": 71.0, "fin": 72.0, "descripcion": "Manos levantadas (corte rápido)"},
+		{"id": "5K", "tipo": "amanecer", "inicio": 72.0, "fin": 73.0, "descripcion": "Amanecer, empuje hacia la luz"},
+		{"id": "5L", "tipo": "montaje", "inicio": 73.0, "fin": 75.0, "descripcion": "Montaje final con destellos: RESPONDE"},
+		{"id": "6A", "tipo": "titulo", "inicio": 75.0, "fin": 90.0, "descripcion": "Silencio, destello y revelación del título; lema e impacto final"}
+	]
+}

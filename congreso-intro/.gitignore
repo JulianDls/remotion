@@ -1,0 +1,8 @@
+node_modules
+.venv
+.cache
+output/*
+!output/.gitkeep
+*.log
+__pycache__
+.env
