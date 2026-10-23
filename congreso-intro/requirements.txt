@@ -1,0 +1,9 @@
+# Entorno Python para regenerar voz, música, mezcla y fondos (Python 3.11+)
+numpy>=2.0
+scipy>=1.13
+soundfile>=0.12
+sherpa-onnx>=1.13.8
+opencv-python-headless>=4.10
+pillow>=10
+numba>=0.60
+pyloudnorm>=0.1.1

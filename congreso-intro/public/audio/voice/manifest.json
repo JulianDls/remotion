@@ -1,0 +1,696 @@
+{
+ "voz": "M2",
+ "motor": "supertonic",
+ "lines": [
+  {
+   "id": "vo01",
+   "file": "audio/voice/vo01.wav",
+   "texto": "Hay momentos… en los que el ruido del mundo intenta apagar lo que Dios encendió en nosotros.",
+   "textoTTS": "Hay momentos... en los que el ruido del mundo intenta apagar lo que Dios ensendió en nosotros.",
+   "duracion": 6.989,
+   "toma": 5,
+   "asrWhisper": "Hay momentos en los que el ruido del mundo intenta apagar lo que Dios encendió en nosotros.",
+   "werWhisper": 0.0,
+   "asrWhisperProcesado": "Hay momentos en los que el ruido del mundo intenta apagar lo que Dios encendió en nosotros.",
+   "werWhisperProcesado": 0.0,
+   "asrParakeet": "Hay momentos en los que el ruido del mundo intenta apagar lo que Dios encendió en nosotros.",
+   "palabras": [
+    {
+     "w": "hay",
+     "start": 0.0,
+     "end": 0.48
+    },
+    {
+     "w": "momentos",
+     "start": 0.48,
+     "end": 1.12
+    },
+    {
+     "w": "en",
+     "start": 1.12,
+     "end": 1.36
+    },
+    {
+     "w": "los",
+     "start": 1.36,
+     "end": 1.6
+    },
+    {
+     "w": "que",
+     "start": 1.6,
+     "end": 1.76
+    },
+    {
+     "w": "el",
+     "start": 1.76,
+     "end": 1.92
+    },
+    {
+     "w": "ruido",
+     "start": 1.92,
+     "end": 2.4
+    },
+    {
+     "w": "del",
+     "start": 2.4,
+     "end": 2.64
+    },
+    {
+     "w": "mundo",
+     "start": 2.64,
+     "end": 2.96
+    },
+    {
+     "w": "intenta",
+     "start": 2.96,
+     "end": 3.6
+    },
+    {
+     "w": "apagar",
+     "start": 3.6,
+     "end": 4.4
+    },
+    {
+     "w": "lo",
+     "start": 4.4,
+     "end": 4.64
+    },
+    {
+     "w": "que",
+     "start": 4.64,
+     "end": 4.8
+    },
+    {
+     "w": "dios",
+     "start": 4.8,
+     "end": 5.28
+    },
+    {
+     "w": "encendió",
+     "start": 5.28,
+     "end": 5.92
+    },
+    {
+     "w": "en",
+     "start": 5.92,
+     "end": 6.16
+    },
+    {
+     "w": "nosotros",
+     "start": 6.16,
+     "end": 6.839
+    }
+   ]
+  },
+  {
+   "id": "vo02",
+   "file": "audio/voice/vo02.wav",
+   "texto": "Generaciones enteras han buscado respuestas.",
+   "textoTTS": "Generasiones enteras han buscado respuestas.",
+   "duracion": 3.085,
+   "toma": 0,
+   "asrWhisper": "Generaciones enteras han buscado respuestas.",
+   "werWhisper": 0.0,
+   "asrWhisperProcesado": "Generaciones enteras han buscado respuestas.",
+   "werWhisperProcesado": 0.0,
+   "asrParakeet": "Generaciones enteras han buscado respuestas.",
+   "palabras": [
+    {
+     "w": "generaciones",
+     "start": 0.0,
+     "end": 0.8
+    },
+    {
+     "w": "enteras",
+     "start": 0.8,
+     "end": 1.44
+    },
+    {
+     "w": "han",
+     "start": 1.44,
+     "end": 1.6
+    },
+    {
+     "w": "buscado",
+     "start": 1.6,
+     "end": 2.16
+    },
+    {
+     "w": "respuestas",
+     "start": 2.16,
+     "end": 2.935
+    }
+   ]
+  },
+  {
+   "id": "vo03",
+   "file": "audio/voice/vo03.wav",
+   "texto": "Han perseguido sueños, identidad y propósito.",
+   "textoTTS": "Han perseguido sueños, identidad y propósito.",
+   "duracion": 3.345,
+   "toma": 3,
+   "asrWhisper": "han perseguido sueños, identidad y propósito.",
+   "werWhisper": 0.0,
+   "asrWhisperProcesado": "han perseguido sueños, identidad y propósito.",
+   "werWhisperProcesado": 0.0,
+   "asrParakeet": "Han perseguido sueños, identidad y propósito.",
+   "palabras": [
+    {
+     "w": "han",
+     "start": 0.0,
+     "end": 0.32
+    },
+    {
+     "w": "perseguido",
+     "start": 0.32,
+     "end": 0.88
+    },
+    {
+     "w": "sueños",
+     "start": 0.88,
+     "end": 1.68
+    },
+    {
+     "w": "identidad",
+     "start": 1.68,
+     "end": 2.24
+    },
+    {
+     "w": "y",
+     "start": 2.24,
+     "end": 2.4
+    },
+    {
+     "w": "propósito",
+     "start": 2.4,
+     "end": 3.195
+    }
+   ]
+  },
+  {
+   "id": "vo04",
+   "file": "audio/voice/vo04.wav",
+   "texto": "Pero hay una voz que sigue llamando.",
+   "textoTTS": "Pero hay una vos que sigue llamando.",
+   "duracion": 1.93,
+   "toma": 5,
+   "asrWhisper": "pero hay una voz que sigue llamando.",
+   "werWhisper": 0.0,
+   "asrWhisperProcesado": "pero hay una voz que sigue llamando.",
+   "werWhisperProcesado": 0.0,
+   "asrParakeet": "Pero hay una voz que sigue llamando.",
+   "palabras": [
+    {
+     "w": "pero",
+     "start": 0.0,
+     "end": 0.24
+    },
+    {
+     "w": "hay",
+     "start": 0.24,
+     "end": 0.4
+    },
+    {
+     "w": "una",
+     "start": 0.4,
+     "end": 0.56
+    },
+    {
+     "w": "voz",
+     "start": 0.56,
+     "end": 0.8
+    },
+    {
+     "w": "que",
+     "start": 0.8,
+     "end": 0.88
+    },
+    {
+     "w": "sigue",
+     "start": 0.88,
+     "end": 1.2
+    },
+    {
+     "w": "llamando",
+     "start": 1.2,
+     "end": 1.78
+    }
+   ]
+  },
+  {
+   "id": "vo05",
+   "file": "audio/voice/vo05.wav",
+   "texto": "No fuimos creados para vivir dormidos.",
+   "textoTTS": "No fuimos creados para vivir dormidos.",
+   "duracion": 2.681,
+   "toma": 4,
+   "asrWhisper": "No fuimos creados para vivir dormidos.",
+   "werWhisper": 0.0,
+   "asrWhisperProcesado": "No fuimos creados para vivir dormidos.",
+   "werWhisperProcesado": 0.0,
+   "asrParakeet": "No fuimos creados para vivir dormidos.",
+   "palabras": [
+    {
+     "w": "no",
+     "start": 0.0,
+     "end": 0.24
+    },
+    {
+     "w": "fuimos",
+     "start": 0.24,
+     "end": 0.72
+    },
+    {
+     "w": "creados",
+     "start": 0.72,
+     "end": 1.2
+    },
+    {
+     "w": "para",
+     "start": 1.2,
+     "end": 1.44
+    },
+    {
+     "w": "vivir",
+     "start": 1.44,
+     "end": 1.76
+    },
+    {
+     "w": "dormidos",
+     "start": 1.76,
+     "end": 2.531
+    }
+   ]
+  },
+  {
+   "id": "vo06",
+   "file": "audio/voice/vo06.wav",
+   "texto": "Fuimos llamados a conocerle, a seguirle, y a vivir para algo mucho más grande que nosotros mismos.",
+   "textoTTS": "Fuimos llamados a conoserle, a seguirle, y a vivir para algo mucho más grande que nosotros mismos.",
+   "duracion": 6.866,
+   "toma": 5,
+   "asrWhisper": "fuimos llamados a conocerle, a seguirle y a vivir para algo mucho más grande que nosotros mismos.",
+   "werWhisper": 0.0,
+   "asrWhisperProcesado": "fuimos llamados a conocerle, a seguirle y a vivir para algo mucho más grande que nosotros mismos.",
+   "werWhisperProcesado": 0.0,
+   "asrParakeet": "Fu llamados a conocerle, a seguirle, y a vivir para algo mucho más grande que nosotros mismos.",
+   "palabras": [
+    {
+     "w": "fu",
+     "start": 0.0,
+     "end": 0.56
+    },
+    {
+     "w": "llamados",
+     "start": 0.56,
+     "end": 1.04
+    },
+    {
+     "w": "a",
+     "start": 1.04,
+     "end": 1.2
+    },
+    {
+     "w": "conocerle",
+     "start": 1.2,
+     "end": 2.16
+    },
+    {
+     "w": "a",
+     "start": 2.16,
+     "end": 2.32
+    },
+    {
+     "w": "seguirle",
+     "start": 2.32,
+     "end": 3.04
+    },
+    {
+     "w": "y",
+     "start": 3.04,
+     "end": 3.28
+    },
+    {
+     "w": "a",
+     "start": 3.28,
+     "end": 3.44
+    },
+    {
+     "w": "vivir",
+     "start": 3.44,
+     "end": 3.92
+    },
+    {
+     "w": "para",
+     "start": 3.92,
+     "end": 4.16
+    },
+    {
+     "w": "algo",
+     "start": 4.16,
+     "end": 4.48
+    },
+    {
+     "w": "mucho",
+     "start": 4.48,
+     "end": 4.8
+    },
+    {
+     "w": "más",
+     "start": 4.8,
+     "end": 5.04
+    },
+    {
+     "w": "grande",
+     "start": 5.04,
+     "end": 5.36
+    },
+    {
+     "w": "que",
+     "start": 5.36,
+     "end": 5.6
+    },
+    {
+     "w": "nosotros",
+     "start": 5.6,
+     "end": 6.08
+    },
+    {
+     "w": "mismos",
+     "start": 6.08,
+     "end": 6.716
+    }
+   ]
+  },
+  {
+   "id": "vo07",
+   "file": "audio/voice/vo07.wav",
+   "texto": "No se trata solamente de reunirnos.",
+   "textoTTS": "No se trata solamente de reunirnos.",
+   "duracion": 2.283,
+   "toma": 5,
+   "asrWhisper": "no se trata solamente de reunirnos.",
+   "werWhisper": 0.0,
+   "asrWhisperProcesado": "No se trata solamente de reunirnos.",
+   "werWhisperProcesado": 0.0,
+   "asrParakeet": "No se trata solamente de reunirnos.",
+   "palabras": [
+    {
+     "w": "no",
+     "start": 0.0,
+     "end": 0.24
+    },
+    {
+     "w": "se",
+     "start": 0.24,
+     "end": 0.4
+    },
+    {
+     "w": "trata",
+     "start": 0.4,
+     "end": 0.72
+    },
+    {
+     "w": "solamente",
+     "start": 0.72,
+     "end": 1.12
+    },
+    {
+     "w": "de",
+     "start": 1.12,
+     "end": 1.28
+    },
+    {
+     "w": "reunirnos",
+     "start": 1.28,
+     "end": 2.133
+    }
+   ]
+  },
+  {
+   "id": "vo08",
+   "file": "audio/voice/vo08.wav",
+   "texto": "Se trata de responder a Su llamado.",
+   "textoTTS": "Se trata de responder a Su llamado.",
+   "duracion": 2.32,
+   "toma": 5,
+   "asrWhisper": "se trata de responder a su llamado.",
+   "werWhisper": 0.0,
+   "asrWhisperProcesado": "se trata de responder a su llamado.",
+   "werWhisperProcesado": 0.0,
+   "asrParakeet": "Se trata de responder a su llamado.",
+   "palabras": [
+    {
+     "w": "se",
+     "start": 0.0,
+     "end": 0.24
+    },
+    {
+     "w": "trata",
+     "start": 0.24,
+     "end": 0.64
+    },
+    {
+     "w": "de",
+     "start": 0.64,
+     "end": 0.8
+    },
+    {
+     "w": "responder",
+     "start": 0.8,
+     "end": 1.28
+    },
+    {
+     "w": "a",
+     "start": 1.28,
+     "end": 1.44
+    },
+    {
+     "w": "su",
+     "start": 1.44,
+     "end": 1.6
+    },
+    {
+     "w": "llamado",
+     "start": 1.6,
+     "end": 2.17
+    }
+   ]
+  },
+  {
+   "id": "vo09",
+   "file": "audio/voice/vo09.wav",
+   "texto": "Una generación.",
+   "textoTTS": "Una generasión.",
+   "duracion": 1.182,
+   "toma": 5,
+   "asrWhisper": "Una generación.",
+   "werWhisper": 0.0,
+   "asrWhisperProcesado": "Una generación.",
+   "werWhisperProcesado": 0.0,
+   "asrParakeet": "Una generación.",
+   "palabras": [
+    {
+     "w": "una",
+     "start": 0.08,
+     "end": 0.32
+    },
+    {
+     "w": "generación",
+     "start": 0.32,
+     "end": 1.032
+    }
+   ]
+  },
+  {
+   "id": "vo10",
+   "file": "audio/voice/vo10.wav",
+   "texto": "Una fe.",
+   "textoTTS": "Una fe.",
+   "duracion": 0.816,
+   "toma": 0,
+   "asrWhisper": "Una fe.",
+   "werWhisper": 0.0,
+   "asrWhisperProcesado": "Una fe.",
+   "werWhisperProcesado": 0.0,
+   "asrParakeet": "Una fe.",
+   "palabras": [
+    {
+     "w": "una",
+     "start": 0.08,
+     "end": 0.32
+    },
+    {
+     "w": "fe",
+     "start": 0.32,
+     "end": 0.666
+    }
+   ]
+  },
+  {
+   "id": "vo11",
+   "file": "audio/voice/vo11.wav",
+   "texto": "Una respuesta.",
+   "textoTTS": "Una respuesta.",
+   "duracion": 1.141,
+   "toma": 0,
+   "asrWhisper": "una respuesta.",
+   "werWhisper": 0.0,
+   "asrWhisperProcesado": "una respuesta.",
+   "werWhisperProcesado": 0.0,
+   "asrParakeet": "Una respuesta.",
+   "palabras": [
+    {
+     "w": "una",
+     "start": 0.08,
+     "end": 0.32
+    },
+    {
+     "w": "respuesta",
+     "start": 0.32,
+     "end": 0.991
+    }
+   ]
+  },
+  {
+   "id": "vo12",
+   "file": "audio/voice/vo12.wav",
+   "texto": "¿Y si este fuera el momento de dejar de mirar desde lejos…",
+   "textoTTS": "¿Y si este fuera el momento de dejar de mirar desde lejos...",
+   "duracion": 4.175,
+   "toma": 5,
+   "asrWhisper": "y si este fuera el momento de dejar de mirar desde lejos.",
+   "werWhisper": 0.0,
+   "asrWhisperProcesado": "y si este fuera el momento de dejar de mirar desde lejos.",
+   "werWhisperProcesado": 0.0,
+   "asrParakeet": "Y si este fuera el momento de dejar de mirar desde lejos.",
+   "palabras": [
+    {
+     "w": "y",
+     "start": 0.0,
+     "end": 0.24
+    },
+    {
+     "w": "si",
+     "start": 0.24,
+     "end": 0.4
+    },
+    {
+     "w": "este",
+     "start": 0.4,
+     "end": 0.64
+    },
+    {
+     "w": "fuera",
+     "start": 0.64,
+     "end": 0.96
+    },
+    {
+     "w": "el",
+     "start": 0.96,
+     "end": 1.2
+    },
+    {
+     "w": "momento",
+     "start": 1.2,
+     "end": 1.68
+    },
+    {
+     "w": "de",
+     "start": 1.68,
+     "end": 1.84
+    },
+    {
+     "w": "dejar",
+     "start": 1.84,
+     "end": 2.32
+    },
+    {
+     "w": "de",
+     "start": 2.32,
+     "end": 2.48
+    },
+    {
+     "w": "mirar",
+     "start": 2.48,
+     "end": 2.96
+    },
+    {
+     "w": "desde",
+     "start": 2.96,
+     "end": 3.28
+    },
+    {
+     "w": "lejos",
+     "start": 3.28,
+     "end": 4.025
+    }
+   ]
+  },
+  {
+   "id": "vo13",
+   "file": "audio/voice/vo13.wav",
+   "texto": "…y comenzar a vivir aquello para lo que fuimos llamados?",
+   "textoTTS": "...y comensar a vivir aquello para lo que fuimos llamados?",
+   "duracion": 3.917,
+   "toma": 1,
+   "asrWhisper": "y comenzar a vivir aquello para lo que fuimos llamados.",
+   "werWhisper": 0.0,
+   "asrWhisperProcesado": "y comenzar a vivir aquello para lo que fuimos llamados.",
+   "werWhisperProcesado": 0.0,
+   "asrParakeet": "y comenzar a vivir aquello para lo que fuimos llamados.",
+   "palabras": [
+    {
+     "w": "y",
+     "start": 0.0,
+     "end": 0.24
+    },
+    {
+     "w": "comenzar",
+     "start": 0.24,
+     "end": 0.8
+    },
+    {
+     "w": "a",
+     "start": 0.8,
+     "end": 0.88
+    },
+    {
+     "w": "vivir",
+     "start": 0.88,
+     "end": 1.36
+    },
+    {
+     "w": "aquello",
+     "start": 1.36,
+     "end": 2.0
+    },
+    {
+     "w": "para",
+     "start": 2.0,
+     "end": 2.32
+    },
+    {
+     "w": "lo",
+     "start": 2.32,
+     "end": 2.48
+    },
+    {
+     "w": "que",
+     "start": 2.48,
+     "end": 2.64
+    },
+    {
+     "w": "fuimos",
+     "start": 2.64,
+     "end": 3.12
+    },
+    {
+     "w": "llamados",
+     "start": 3.12,
+     "end": 3.767
+    }
+   ]
+  }
+ ]
+}
